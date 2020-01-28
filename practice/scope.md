@@ -220,6 +220,8 @@ function sample() {
   }
   console.log(username);
 }
+
+sample();
 ```
 
 21. Guess the output and the reason behind that.
@@ -231,6 +233,8 @@ function sample() {
   }
   console.log(username);
 }
+
+sample();
 ```
 
 22. Guess the output and the reason behind that.
@@ -240,10 +244,12 @@ function sample() {
   var username = "Arya Stark";
   if (true) {
     var username = "John Snow";
-    console.log(username);
+    console.log(username, "first");
   }
   console.log(username, "second");
 }
+
+sample();
 ```
 
 23. Guess the output and the reason behind that.
@@ -257,6 +263,8 @@ function sample() {
   }
   console.log(username, "second");
 }
+
+sample();
 ```
 
 24. Guess the output and the reason behind that.
@@ -304,7 +312,7 @@ if (true) {
 function outer() {
   let movie = "Mad Max: Fury Road";
   function inner() {
-    console.log("I love this movie called ${movie.toUpperCase()}");
+    console.log(`I love this movie called ${movie.toUpperCase()}`);
   }
   inner();
 }
@@ -319,7 +327,7 @@ function outer() {
   let movie = "Mad Max: Fury Road";
   function inner() {
     let movie = "Before Sunrise";
-    console.log("I love this movie called ${movie.toUpperCase()}");
+    console.log(`I love this movie called ${movie.toUpperCase()}`);
   }
   inner();
 }
@@ -336,7 +344,7 @@ function outer() {
     let movie = "Before Sunrise";
     function extraInner() {
       let movie = "Gone Girl";
-      console.log("I love this movie called ${movie.toUpperCase()}");
+      console.log(`I love this movie called ${movie.toUpperCase()}`);
     }
     extraInner();
   }
@@ -356,7 +364,7 @@ const sub = (a, b) => {
   return a - b;
 };
 const multiply = (a, b) => {
-  return a + b;
+  return a * b;
 };
 const divide = (a, b) => {
   return a / b;
@@ -375,7 +383,7 @@ const sub = (a, b) => {
   return a - b;
 };
 const multiply = (a, b) => {
-  return a + b;
+  return a * b;
 };
 const divide = (a, b) => {
   return a / b;
